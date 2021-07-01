@@ -3,8 +3,11 @@ import styled from "styled-components";
 export const Icone = styled.img`
   height: 25px;
   width: 25px;
-  color: ${({theme}) => theme.text};
   `;
+
+  export const IconeTema = styled(Icone)`
+  filter:${({theme})=> theme.filter};
+  `
 
 export const Botao = styled.button`
   margin: 15px auto 0px auto;
@@ -44,4 +47,13 @@ export const Detalhe = styled.span`
 export const Saldo = styled.div`
   font-weight: 700;
   font-size: 32px;
+`;
+
+export const BtnTema = styled.button`
+  position: absolute;
+  top: 4vh;
+  right: 20px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
 `;
