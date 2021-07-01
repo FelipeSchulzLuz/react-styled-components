@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Icone = styled.img`
   height: 25px;
   width: 25px;
+  color: ${({theme}) => theme.text};
   `;
 
 export const Botao = styled.button`
@@ -22,7 +23,7 @@ export const Box = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color: ${({theme}) => theme.inside};
   margin: 2px;
   border-radius: 5px;
   box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.04);
@@ -36,7 +37,7 @@ export const Box = styled.div`
   `;
 
 export const Detalhe = styled.span`
-  color: #41d3be;
+  color: ${({theme}) => theme.text};;
   font-size: 24px;
   `;
 
