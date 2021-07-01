@@ -4,15 +4,15 @@ import utilidades from '../assets/images/utilidades.svg';
 import transporte from '../assets/images/transporte.svg';
 import saude from '../assets/images/saude.svg';
 import outros from '../assets/images/outros.svg';
-import { Icone } from './UI/index';
+import { IconeTema } from './UI/index';
 
 function ImageFilter(type) {
     const Images = {
-        Restaurante: <Icone src={alimentacao} alt="Restaurante" />,
-        Utilidades: <Icone src={utilidades} alt="Utilidades" />,
-        Transporte: <Icone src={transporte} alt="Transporte" />,
-        Saude: <Icone src={saude} alt="Saude" />,
-        default: <Icone src={outros} alt="Outro" />
+        Restaurante: <IconeTema src={alimentacao} alt="Restaurante" />,
+        Utilidades: <IconeTema src={utilidades} alt="Utilidades" />,
+        Transporte: <IconeTema src={transporte} alt="Transporte" />,
+        Saude: <IconeTema src={saude} alt="Saude" />,
+        default: <IconeTema src={outros} alt="Outro" />
     };
 
     return Images[type] || Images.default;
